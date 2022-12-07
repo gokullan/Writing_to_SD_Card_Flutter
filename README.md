@@ -1,4 +1,4 @@
-# sd_card
+# Writing to SD Card
 
 A Flutter application that illustrates writing files to SD Card.
 
@@ -11,6 +11,14 @@ Starting from Android 11, accessing external storage has become more secure. Add
 
 - [external_path](https://pub.dev/packages/external_path)
 - [permission_handler](https://pub.dev/packages/permission_handler)
+
+## Quick Revision (things to remember if you're studying for an exam)
+
+- Request for permission using `Permission.manageExternalStorage.request()`. (Return-type: `Future<PermissionStatus>`)
+- Get internal and external storage directory paths using `ExternalStorage.getExternalStorageDirectories` (Return-type: `Future<List<String>>`)
+- Create a File Object - `FileObj = File(path)`
+- Create the actual file using `FileObj.create()`
+- Write to the file using `FileObj.writeAsString()`
 
 ## References
 
