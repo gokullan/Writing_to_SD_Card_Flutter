@@ -7,6 +7,11 @@ A Flutter application that illustrates writing files to SD Card.
 Starting from Android 11, accessing external storage has become more secure. Add the following permission to android/app/src/main/AndroidManifest.xml:
 `<uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>`
 
+## Dependencies (external)
+
+- [external_path](https://pub.dev/packages/external_path)
+- [permission_handler](https://pub.dev/packages/permission_handler)
+
 ## References
 
 - [Storage updates in Android 11](https://developer.android.com/about/versions/11/privacy/storage)
